@@ -3,4 +3,6 @@ const getListStudents = [
     { id: 2, firstName: 'James', location: 'Columbia' },
     { id: 5, firstName: 'Serena', location: 'San Francisco' }
 ];
-console.log(getListStudents);
+
+let studentsIdList = getListStudents.map(({ id }) => id);
+console.log(studentsIdList);
