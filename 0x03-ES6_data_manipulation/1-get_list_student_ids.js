@@ -1,8 +1,8 @@
-const getListStudents = [
-    { id: 1, firstName: 'Guillaume', location: 'San Francisco' },
-    { id: 2, firstName: 'James', location: 'Columbia' },
-    { id: 5, firstName: 'Serena', location: 'San Francisco' }
-];
+const getListStudentIds = (myArray) => {
+  if (!Array.isArray(myArray)) {
+    return [];
+  }
+  return myArray.map((studentId) => studentId.id);
+};
 
-let studentsIdList = getListStudents.map(({ id }) => id);
-console.log(studentsIdList);
+export default getListStudentIds;
